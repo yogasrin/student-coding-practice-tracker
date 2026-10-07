@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Coding Practice Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+    <h1>Student Coding Practice Tracker</h1>
+
+    <p>Track your coding practice and improve your programming skills.</p>
+    <div class="dashboard">
+
+    <div class="stat-card">
+        <h3>Total Problems</h3>
+        <p id="totalProblems">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Easy</h3>
+        <p id="easyProblems">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Medium</h3>
+        <p id="mediumProblems">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Hard</h3>
+        <p id="hardProblems">0</p>
+    </div>
+
+</div>
+
+    <div class="form-section">
+
+        <h2>Add Coding Problem</h2>
+
+        <form>
+
+            <label>Problem Name</label>
+            <input type="text" placeholder="Enter problem name">
+
+            <label>Programming Language</label>
+            <select>
+                <option>Python</option>
+                <option>Java</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>JavaScript</option>
+            </select>
+
+            <label>Difficulty</label>
+            <select>
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+            </select>
+
+            <label>Date</label>
+            <input type="date">
+
+            <button type="submit">Add Problem</button>
+
+        </form>
+        <h2>Coding Practice History</h2>
+        <input type="text" id="searchInput" placeholder="Search coding problem...">
+        <select id="difficultyFilter">
+    <option value="All">All Difficulties</option>
+    <option value="Easy">Easy</option>
+    <option value="Medium">Medium</option>
+    <option value="Hard">Hard</option>
+</select>
+<select id="languageFilter">
+    <option value="All">All Languages</option>
+    <option value="Python">Python</option>
+    <option value="Java">Java</option>
+    <option value="C">C</option>
+    <option value="C++">C++</option>
+    <option value="JavaScript">JavaScript</option>
+</select>
+        <div id="problemList"></div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+    </body>
+</html>
